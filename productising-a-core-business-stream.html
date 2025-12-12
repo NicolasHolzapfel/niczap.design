@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productising a core business stream | Nicolas Holzapfel — Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="project-page">
+    <header class="project-page"><a href="index.html">Nicolas Holzapfel — Portfolio</a></header>
+
+    <div class="title">
+        <h1 class="title">Productising a core business stream</h1>
+        <p class="subtitle">Transforming offline PDFs and CSVs into a new, productised in-app experience</p>
+        <hr>
+    </div>
+
+    <!-- <div class="content">
+        <h3 class="col1">col1</h3>
+        <h3 class="col2">col2</h3>
+    </div> -->
+
+    <div class="content">
+        <h2 class="col1">Context</h2>
+        <!-- <h2 class="col2">Context</h2> -->
+        <div class="col2">
+            <p class="col2">Demand for Sylvera’s early-stage market expertise was surging, but the solution lived
+                entirely
+                offline in CSVs and PDFs — making it hard to scale or sell as a renewing subscription. Our five-person
+                squad
+                (GM, PM, myself as designer, & 2 engineers) set out to bring these insights into the platform as a core,
+                interactive feature.
+            </p>
+            <p>
+                Our first step was exploring how text-heavy, ~50-page reports could be turned into experiences worthy of
+                a
+                modern SaaS platform.
+            </p>
+        </div>
+    </div>
+
+    <img class="standalone" src="./images/sylvera/pdf-page.png"
+        alt="Original PDF format of Sylvera early stage reports">
+
+    <div class="content">
+        <h2 class="col1">Details when needed, not upfront</h2>
+        <div class="col2">
+            <p class="col2">
+                To reduce cognitive load and move away from the PDFs’ “wall of data” approach, I surfaced key insights
+                through charts and interactions, deferring technical detail to tooltips and footnotes for on-demand
+                access.
+            </p>
+        </div>
+    </div>
+
+    <img class="standalone" src="./images/sylvera/deliveryrisk+topcharts.png" alt="">
+
+    <img class="standalone" src="./images/sylvera/MortalityRate-flat-03.png" alt="">
+
+    <div class="content">
+        <h2 class="col1">Tools not text</h2>
+        <div class="col2">
+            <p class="col2">
+                The report’s recommended actions were redesigned into an interactive planning tool within the SaaS
+                platform,
+                enabling users to model trade-offs, forecast outcomes, and make data-informed decisions to strengthen
+                project performance.
+            </p>
+        </div>
+    </div>
+
+    <img class="standalone" src="./images/sylvera/deliveryrisk+waterfall.png" alt="">
+
+    <div class="content">
+        <h2 class="col1">Making the cut</h2>
+        <div class="col2">
+            <p>
+                The exploratory phase ended with a tough reality: an engineer-light squad and impending quarterly goals.
+                To deliver as quickly as possible, we focused the MVP on bringing a CSV of early-stage project data into
+                the platform as an interactive table. Relatively unglamorous, but the right decision:</p>
+            <ul>
+                <li>The content would be continuously added-to, driving logins and justifying subscriptions.</li>
+                <li>We could reuse existing frontend components, giving the best return on limited engineering resource.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="col1">Design system for rapid delivery</h2>
+        <div class="col2">
+                <p>
+                    Leveraging a flexible, front-end-aligned table component I’d recently designed for the Sylvera design system, I was able to help deliver a scalable UI for the catalogue in record time. I streamlined the layout by merging related CSV fields into multi-element columns — minimising horizontal scrolling and making side-by-side comparison effortless.
+                </p>
+               
+                <p>Column order was optimised around the decisions users needed to make once they’d narrowed their list to a shortlist, ensuring the most relevant data was always in view.</p>
+                <p>Ideally, we’d have shipped an alternative card view for scannability, but speed-of-delivery had to win out.</p>
+        </div>
+    </div>
+
+    <img class="standalone" src="./images/sylvera/ESC3.png" alt="">
+
+
+
+    <img class="standalone" src="./images/sylvera/.png" alt="">
+
+    <div class="content">
+        <h2 class="col1">The best UI is the one you don't think about</h2>
+        <p class="col2">
+            Catalogue filters used sliders — often a source of frustration. To avoid this, I defined their behaviour in detail, from increment scale to micro-interactions. The result was a seamless flow that kept users focused on exploring opportunities, not wrestling with controls.
+        </p>
+    </div>
+
+    <img class="standalone" src="./images/sylvera/filters.png" alt="">
+
+    <div class="content">
+        <h2 class="col1">Macro-components for faster dev cycles</h2>
+        <div class="col2">
+            <p class="col2">
+                Where possible, the early-stage project page design mirrored the mature-project structure while
+                accommodating its unique data points. I used the opportunity to harmonise all existing project page
+                designs,
+                distilling seven distinct page types into a single flexible design-plus-frontend responsive component.
+                This
+                cut design and engineering overhead and sped up later dev cycles.
+            </p>
+        </div>
+    </div>
+
+    <img class="standalone" src="./images/sylvera/ESC+page.png" alt="">
+
+    <img class="max" src="./images/sylvera/Project+pages.png" alt="">
+
+    <div class="review">
+        <h3>Project reflections</h3>
+        <div class="reviewcolumns">
+            <div class="equalcolumn">
+                <h2>Wins</h2>
+                <ul>
+                    <li>Our OKR was three early-stage sales in the quarter. With the productised experience launched, we
+                        more than doubled that — closing seven deals and proving the value of the strategy.</li>
+                    <li>The harmonised project page component cut dev and design cycles and improved UX consistency
+                        across the platform.</li>
+                    <li>The project was such a success that the company org structure was overhauled to replicate
+                        the success of our team.</li>
+            </div>
+            <div class="equalcolumn">
+                <h2>Learnings</h2>
+                <ul>
+                    <li>The original design vision was overly ambitious, forcing large scope cuts to deliver an MVP
+                        within the quarter. I could have anticipated this and invested less polish and detail in the
+                        initial exploratory designs.</li>
+                    <li>Embedding filters in column headers would have made the table cleaner and easier to use. The
+                        above-table placement came from the original vision, which allowed for switching between table
+                        and card views with shared filters above both. In hindsight, I could have anticipated that
+                        competing priorities might drop the card view, and focused on perfecting the table experience
+                        from the start.</li>
+                </ul>
+            </div>
+            </p>
+        </div>
+    </div>
+
+    <div class="next">
+        <div class="next-title">
+            <h2 class="next"><a href="./turning-a-niche-cli-tool-into-a-product-anyone-can-use.html">Next project</a></h2>
+        </div>
+        <div class="showcase">
+            <a href="./turning-a-niche-cli-tool-into-a-product-anyone-can-use.html"><img class="thumbnail" src="./images/heros/dave-hero-violet.png"
+                    alt="Sample DaVe app designs"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

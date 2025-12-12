@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+hr {
+    color: rgba(50, 50, 70, 1);
+}
+
+html {
+    font-family: "Inria Sans", sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+body {
+    background-color: rgba(245, 245, 245, 1);
+    margin: 0px auto;
+    padding: 24px 56px;
+}
+
+body.homepage {
+    max-width: 1060px;
+}
+
+body.project-page {
+    max-width: 1140px;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+}
+
+header {
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+    color: rgba(50, 50, 70, 1);
+}
+
+h1 {
+    color: rgba(50, 50, 70, 1);
+}
+
+h2 {
+    color: rgba(50, 50, 70, 1);
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 0.6em 0;
+}
+
+h3 {
+    color: rgba(50, 50, 70, 1);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 1.2em 0;
+}
+
+@media only screen and (max-width: 480px) {
+    h2 {
+        font-size: 28px;
+    }
+}
+
+p {
+    margin-bottom: 0.5em;
+    line-height: 1.7em;
+}
+
+a {
+    color: #5e5dba;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #5e5dba;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+img.max {
+    position: relative;
+    /* left: 50%;
+    right: 50%; */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+img.thumbnail {
+    height: auto;
+    width: 70%;
+    margin: 0 0 20px 0;
+}
+
+li {
+    line-height: 1.7em;
+    margin: 0.5em 0 0.5em 1.0em;
+}
+
+
+
+/* ------------------------PROJECT PAGES------------------------ */
+
+header.project-page {
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+/* TITLE SECTION */
+
+div.title {
+    text-align: center;
+    margin: 70px auto 70px auto;
+}
+
+@media only screen and (max-width: 480px) {
+    div.title {
+    text-align: left;
+    }
+}
+
+h1.title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.007em; 
+    margin-bottom: 0.2em;
+}
+
+hr {
+    margin: 70px auto 80px auto;
+    border-color: rgba(50, 50, 70, 0.4);
+    border-width: 0.8px;
+}
+@media only screen and (max-width: 480px) {
+    h1.title {
+        font-size: 36px;
+    }
+}
+
+/* CONTENT SECTION */
+
+img.standalone {
+    margin: 50px auto;
+}
+
+div.content {
+    margin: 50px auto;
+    display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+    div.content {
+        margin: 70px auto;
+        display: block;
+    }
+}
+
+p.col1, div.col1, h2.col1 {
+    /* flex: 1; */
+    flex-grow: 1;
+    /* flex-shrink: 1; */
+    flex-basis: 0;
+    padding-right: 30px;
+}
+
+div.col2, p.col2, h2.col2, ul.col2 {
+    /* flex: 2; */
+    flex-grow: 2;
+    /* flex-shrink: 2; */
+    flex-basis: 0;
+    margin-top: 0.4rem;
+}
+
+div.review {
+    margin: 70px auto;
+}
+
+div.reviewcolumns {
+    display: flex;
+    gap: 40px;
+}
+
+div.equalcolumn {
+    flex: 1;
+}
+
+div.next {
+    text-align: center;
+}
+
+div.next-title {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    /* background-color: pink; */
+}
+
+div.next-title::before,
+div.next-title::after {
+    content: "";
+    flex-grow: 1;
+    border-top: 1px solid rgba(50, 50, 70, 1);
+    bottom: 0.4em;
+    position: relative;
+}
+
+h2.next {
+    /* flex-grow: 1;
+    flex-basis: 0; */
+    width: auto;
+    text-wrap: nowrap;
+}
+
+/* ------------------------HOMEPAGE STYLES------------------------ */
+
+header.homepage {
+    font-size: 20px;
+}
+
+/* HOMEPAGE HEROS */
+
+h1.hero {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.5; 
+    letter-spacing: 0.007em; 
+    margin: 2.5em auto 3em auto;
+    max-width: 720px;
+}
+
+@media only screen and (max-width: 480px) {
+    h1.hero {
+        font-size: 36px;
+    }
+}
+
+/* HOMEPAGE SECTIONS */
+
+div.showcase {
+    margin: 0 0 130px 0;
+}
+
+/* HOMEPAGE WRAPUP SECTION */ 
+
+div.wrapup {
+    margin: 150px auto;
+    /* max-width: 600px; */
+    text-align: center;
+}
+
+h2.wrapup {
+    font-size: 48px;
+    color: rgba(50, 50, 70, 1);
+}
+
+p.wrapup {
+    margin-bottom: 1.4em;
+}
+
